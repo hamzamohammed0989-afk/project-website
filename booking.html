@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Bite | Guest Booking</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" id="brand">Fresh<span>Bite</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="help.html">Help</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <p class="eyebrow">Book Ahead</p>
+      <h1>Guest Booking</h1>
+      <p>Fadlan buuxi foomka hoose oo dhammaystiran si aan miis kuugu
+        dalbano Fresh Bite.</p>
+    <div class="wave"></div></div>
+
+    <section class="section" style="max-width:700px;">
+      <form action="#" method="post" novalidate>
+
+        <!-- ============ PERSONAL DETAILS ============ -->
+        <fieldset>
+          <legend>Guest Details</legend>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Magacaaga oo dhan" required minlength="3">
+          </div>
+
+          <div class="field">
+            <label for="major">Major / Field of study</label>
+            <select id="major" name="major" required>
+              <option value="" disabled selected>Dooro major-kaaga</option>
+              <option value="cs">Computer Science</option>
+              <option value="it">Information Technology</option>
+              <option value="business">Business Administration</option>
+              <option value="engineering">Engineering</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- ============ GENDER (radio) ============ -->
+        <fieldset>
+          <legend>Gender</legend>
+          <div class="choice-row" role="radiogroup" aria-label="Gender">
+            <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male" required> Male</label>
+            <label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female"> Female</label>
+          </div>
+        </fieldset>
+
+        <!-- ============ HOBBIES (checkbox) ============ -->
+        <fieldset>
+          <legend>Hobbies</legend>
+          <div class="choice-row">
+            <label for="hobby-reading"><input type="checkbox" id="hobby-reading" name="hobbies" value="reading"> Reading</label>
+            <label for="hobby-music"><input type="checkbox" id="hobby-music" name="hobbies" value="music"> Music</label>
+            <label for="hobby-sports"><input type="checkbox" id="hobby-sports" name="hobbies" value="sports"> Sports</label>
+            <label for="hobby-cooking"><input type="checkbox" id="hobby-cooking" name="hobbies" value="cooking"> Cooking</label>
+          </div>
+        </fieldset>
+
+        <!-- ============ RESERVATION DETAILS ============ -->
+        <fieldset>
+          <legend>Reservation Details</legend>
+
+          <div class="choice-row">
+            <div class="field" style="flex:1 1 160px;">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="field" style="flex:1 1 160px;">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+            <div class="field" style="flex:1 1 120px;">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Tusaale: miis gadaal ah, allergies, iwm."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Confirm reservation</button>
+        
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Fresh Bite — Final Project, Jamhuriya University of Science &amp; Technology</p>
+  </footer>
+
+</body>
+</html>
